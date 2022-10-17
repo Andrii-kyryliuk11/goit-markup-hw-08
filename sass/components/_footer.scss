@@ -1,0 +1,140 @@
+.footer {
+    padding: 60px 0px;
+    background-color: $footer-color;
+}
+
+.footer__container {
+    display: flex;
+    align-items: baseline;
+}
+
+.adress {
+    display: inline-flex;
+    flex-direction: column;
+    margin-right: 70px;
+}
+
+.adress__companyLocation {
+    display: block;
+    font-style: normal;
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.71;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    margin-bottom: 9px;
+}
+
+.adress__mail,
+.adress__tel {
+    display: block;
+    color: $footer-adress;
+    font-size: 14px;
+    line-height: 1.71;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    transition: color 250ms $transition-function;
+
+    &:hover,
+    &focus {
+        color: #fff;
+    }
+}
+
+.adress__mail {
+    margin-bottom: 9px;
+}
+
+.footer-links {
+    margin-right: 90px;
+}
+
+.footer-links__title,
+.footer-form__label {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-links__container {
+    display: flex;
+    gap: 10px
+}
+
+.footer-links__item {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-links__social-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms $transition-function;
+}
+
+.footer-links__social-icon {
+    fill: #fff;
+}
+
+.footer-links__social-link:hover,
+.footer-links__social-link:focus {
+    background-color: $accent-color;
+}
+
+.footer-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-form__label {
+    display: inline-block;
+    width: 100%;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.footer-form__input {
+    width: 360px;
+    height: 50px;
+    padding: 15px 16px;
+    background-color: $footer-color;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    color: #fff;
+    transition: border 250ms $transition-function;
+
+    &::placeholder {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.25;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    &:focus {
+        outline: 1px solid transparent;
+        border: 1px solid #fff;
+    }
+}
+
+.submit-icon {
+    fill: #fff;
+}

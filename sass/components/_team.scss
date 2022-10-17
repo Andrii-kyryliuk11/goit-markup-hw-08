@@ -1,0 +1,86 @@
+.team {
+    padding: 94px 0px;
+    background-color: $dark-background;
+}
+
+.team__title {
+    color: $font-header-color;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.team__members {
+    display: flex;
+    gap: 30px;
+}
+
+.member-profile {
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%), 0px 2px 1px rgb(0 0 0 / 20%);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.member-profile__footer {
+    max-width: 270px;
+    padding: 30px;
+    background-color: #fff;
+    text-align: center;
+    border-right: solid 1px transparent;
+    border-bottom: solid 1px transparent;
+    border-left: solid 1px transparent;
+}
+
+.member-profile__links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.member-profile__name {
+    color: $font-header-color;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+}
+
+.member-profile__position {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    margin-bottom: 16px;
+}
+
+.member-profile__link-item {
+    width: 44px;
+    height: 44px;
+}
+
+.member-profile__social-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: background-color 250ms $transition-function;
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+    }
+}
+
+.member-profile__social-icon {
+    fill: $icon-color;
+    transition: fill 250ms $transition-function;
+}
+
+.member-profile__social-link:hover .member-profile__social-icon,
+.member-profile__social-link:focus .member-profile__social-icon {
+    fill: #FFF;
+}

@@ -1,0 +1,15 @@
+.site-nav__link--current {
+    color: $accent-color;
+    position: relative;
+}
+
+.site-nav__link--current::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    background-color: $accent-color;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+}
