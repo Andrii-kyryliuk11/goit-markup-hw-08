@@ -16,32 +16,35 @@
 <body>
   <header class="header">
     <div class="header__container container">
-      <nav class="header-nav">
-        <a href="./index.html" class="logo">
-          <span lang="en" class="logo__first-letter">Web</span><span lang="en" class="logo__second-letter">Studio</span>
-        </a>
-        <ul class="site-nav">
-          <li><a href="./index.html" class="site-nav__link site-nav__link--current">Студія</a></li>
-          <li><a href="./portfolio.html" class="site-nav__link">Портфоліо</a></li>
-          <li><a href="" class="site-nav__link">Контакти</a></li>
+      <a href="./index.html" class="logo">
+        <span lang="en" class="logo__first-letter">Web</span><span lang="en" class="logo__second-letter">Studio</span>
+      </a>
+      <div class="header-nav__container">
+        <nav class="header-nav">
+          <ul class="site-nav">
+            <li><a href="./index.html" class="site-nav__link site-nav__link--current">Студія</a></li>
+            <li><a href="./portfolio.html" class="site-nav__link">Портфоліо</a></li>
+            <li><a href="" class="site-nav__link">Контакти</a></li>
+          </ul>
+        </nav>
+        <ul class="header-contacts">
+          <li>
+            <a class="header-contacts__mail" href="mailto:info@devstudio.com"><svg class="header-contacts__icon-mail"
+                width="16" height="12">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com</a>
+          </li>
+          <li>
+            <a class="header-contacts__phone" href="tel:+380961111111">
+              <svg class="header-contacts__icon-phone" width="10" height="16">
+                <use href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a>
+          </li>
         </ul>
-      </nav>
-      <ul class="header-contacts">
-        <li>
-          <a class="header-contacts__mail" href="mailto:info@devstudio.com"><svg class="header-contacts__icon-mail"
-              width="16" height="12">
-              <use href="./images/icons.svg#icon-mail"></use>
-            </svg>
-            info@devstudio.com</a>
-        </li>
-        <li>
-          <a class="header-contacts__phone" href="tel:+380961111111">
-            <svg class="header-contacts__icon-phone" width="10" height="16">
-              <use href="./images/icons.svg#icon-smartphone"></use>
-            </svg>
-            +38 096 111 11 11</a>
-        </li>
-      </ul>
+      </div>
+
     </div>
   </header>
 
@@ -135,7 +138,8 @@
         <h2 class="team__title">Наша команда</h2>
         <ul class="team__members">
           <li class="member-profile">
-            <img src="./images/4.jpg" alt="Ігор Дем'яненко" width="270">
+            <img srcset="./images/igor450.jpg 1x, ./images/igor@2x450.jpg 2x" sizes="300px" src="./images/igor450.jpg"
+              alt="Ігор Дем'яненко">
             <div class="member-profile__footer">
               <h3 class="member-profile__name">Ігор Дем'яненко</h3>
               <p class="member-profile__position">Product Designer</p>
@@ -176,7 +180,9 @@
             </div>
           </li>
           <li class="member-profile">
-            <img src="./images/5.jpg" alt="Ольга Рєпіна" width="270">
+            <img srcset="./images/olha450.jpg 1x, ./images/olha@2x450.jpg 2x"
+              sizes="300px" src="./images/igor450.jpg"
+              alt="Ігор Дем'яненко">
             <div class="member-profile__footer">
               <h3 class="member-profile__name">Ольга Рєпіна</h3>
               <p class="member-profile__position">Frontend Developer</p>
@@ -217,7 +223,9 @@
             </div>
           </li>
           <li class="member-profile">
-            <img src="./images/6.jpg" alt="Микола Тарасов" width="270">
+            <img srcset="./images/mykola450.jpg 1x, ./images/mykola@2x450.jpg 2x"
+              sizes="300px" src="./images/igor450.jpg"
+              alt="Ігор Дем'яненко">
             <div class="member-profile__footer">
               <h3 class="member-profile__name">Микола Тарасов</h3>
               <p class="member-profile__position">Marketing</p>
@@ -258,7 +266,9 @@
             </div>
           </li>
           <li class="member-profile">
-            <img src="./images/7.jpg" alt="Михайло Єрмаков" width="270">
+            <img srcset="./images/misha450.jpg 1x, ./images/misha@2x450.jpg 2x" 
+              sizes="300px" src="./images/igor450.jpg"
+              alt="Ігор Дем'яненко">
             <div class="member-profile__footer">
               <h3 class="member-profile__name">Михайло Єрмаков</h3>
               <p class="member-profile__position">UI Designer</p>

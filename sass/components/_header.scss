@@ -1,8 +1,14 @@
-.header__container,
-.header-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.header__container{
+
+}
+
+.logo {
+    display: block;
+    margin: 15px 0px;
+}
+
+.header-nav__container{
+    display: none;
 }
 
 .header {

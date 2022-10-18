@@ -1,21 +1,20 @@
 .team {
-    padding: 94px 0px;
+    padding: 60px 0px;
     background-color: $dark-background;
 }
 
 .team__title {
+    margin-bottom: 30px;
     color: $font-header-color;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    letter-spacing: 0.03em;
+font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
     text-align: center;
-    margin-bottom: 50px;
+    letter-spacing: 0.03em;
 }
 
 .team__members {
-    display: flex;
-    gap: 30px;
+
 }
 
 .member-profile {
@@ -24,7 +23,7 @@
 }
 
 .member-profile__footer {
-    max-width: 270px;
+    // max-width: 270px;
     padding: 30px;
     background-color: #fff;
     text-align: center;
@@ -35,7 +34,9 @@
 
 .member-profile__links {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 10px;
+
 }
 
 .member-profile__name {
