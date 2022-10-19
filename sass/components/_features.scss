@@ -1,13 +1,40 @@
 .features {
     padding: 60px 0px;
+
+    @include desktop {
+        padding: 94px 0px;
+    }
 }
 
-.features__list {
+.features-list {
 
+    @media screen and (max-width: 767px) {
+        &__item {
+            &:not(:last-child) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    @include tablet {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+}
+
+.features-list__item {
+    @include tablet {
+        width: calc((100% - 2 * 15px)/2);
+    }
+
+    @include desktop {
+        width: calc((100% - 3 * 30px)/4);
+    }
 }
 
 .features__background {
-  
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,6 +54,11 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 10px;
+
+    @include tablet {
+        text-align: start;
+    }
+
 }
 
 .features__text {

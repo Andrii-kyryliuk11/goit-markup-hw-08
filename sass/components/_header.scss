@@ -1,14 +1,36 @@
-.header__container{
+.header__container {
+    display: flex;
+    
+    align-items: center;
 
+    @include tablet {
+        justify-content: space-between;
+    }
+
+    @include desktop {
+        justify-content: flex-start;
+    }
 }
 
-.logo {
-    display: block;
-    margin: 15px 0px;
-}
+// .logo {
+//     display: block;
+//     margin: 15px 0px;
+// }
 
-.header-nav__container{
-    display: none;
+.header-nav__container {
+
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
+    @include tablet {
+        display: flex;
+        gap: 88px;
+    }
+
+    @include desktop {
+        gap: 330px;
+    }
 }
 
 .header {
@@ -40,17 +62,32 @@
 .header-contacts {
     display: flex;
     gap: 50px;
+
+    @include mobile {}
+
+    @include tablet {
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+
+    }
+
+    @include desktop {
+        flex-direction: row;
+        gap: 30px;
+
+    }
 }
 
 .header-contacts__mail,
 .header-contacts__phone {
     display: flex;
     align-items: center;
-    padding: 32px 0px;
+
     color: $font-text-color;
     font-style: normal;
-    font-size: 14px;
-    line-height: 1.14;
+    font-size: 12px;
+    line-height: 1.16;
     font-weight: 500;
     letter-spacing: 0.02em;
     transition: color 250ms $transition-function;
@@ -59,6 +96,12 @@
     &:focus {
         color: $accent-color;
     }
+
+    @include desktop {
+        padding: 32px 0px;
+        font-size: 14px;
+            line-height: 1.14;
+    }
 }
 
 .header-contacts__icon-mail,
@@ -66,6 +109,32 @@
     fill: $font-text-color;
     margin-right: 10px;
     transition: fill 250ms $transition-function;
+
+
+}
+
+.header-contacts__icon-mail {
+    @include tablet {
+        width: 14px;
+        height: 10px;
+    }
+
+    @include desktop {
+        width: 16px;
+        height: 12px;
+    }
+}
+
+.header-contacts__icon-phone {
+    @include tablet {
+        width: 10px;
+        height: 14px;
+    }
+
+    @include desktop {
+        width: 10px;
+        height: 16px;
+    }
 }
 
 .header-contacts__mail:hover .header-contacts__icon-mail,

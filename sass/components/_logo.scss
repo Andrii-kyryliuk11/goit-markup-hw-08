@@ -1,4 +1,6 @@
 .logo {
+
+
     display: block;
     width: 135px;
     font-family: Raleway;
@@ -7,6 +9,17 @@
     font-size: 24px;
     line-height: 1.16;
     letter-spacing: 0.03em;
+
+
+
+    @include tablet {
+        margin-right: 90px;
+    }
+
+    @include desktop {
+        font-size: 26px;
+        line-height: 1.19;
+    }
 }
 
 .logo__first-letter {
@@ -21,6 +34,23 @@
     color: #fff;
 }
 
+.logo--header {
+    @media screen and (max-width: 767px) {
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+}
+
 .logo--footer {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 20px;
+
+    @include desktop {
+        margin: 0 0 20px 0;
+
+    }
+
+
 }

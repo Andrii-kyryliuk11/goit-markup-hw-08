@@ -1,6 +1,7 @@
 @import "utilits/variables";
 @import "utilits/normalise";
-@import "utilits/_cancellationStyles";
+@import "utilits/cancellationStyles";
+@import "utilits/mixins";
 @import "base/fonts";
 @import "utilits/visuallyHidden";
 @import "utilits/container";
