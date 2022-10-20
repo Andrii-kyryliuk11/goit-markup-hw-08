@@ -16,11 +16,11 @@
     text-align: center;
     letter-spacing: 0.03em;
 
-@include desktop {
-    font-size: 36px;
+    @include desktop {
+        font-size: 36px;
         line-height: 1.16;
         margin-bottom: 50px;
-}
+    }
 
 }
 
@@ -38,7 +38,7 @@
     border-radius: 0px 0px 4px 4px;
 
 
-    @media screen and (max-width: 767px) {
+    @include allPhones {
         &:not(:last-child) {
 
             margin-bottom: 30px;
@@ -49,17 +49,12 @@
 
     @include tablet {
         width: calc((100% - 2 * 15px)/2);
-        & img {
-            height: 374px;
-        }
+
     }
 
     @include desktop {
         width: calc((100% - 3 * 30px)/4);
-        & img {
-                height: 260px;
-                width: 270px;
-            }
+
     }
 
 }

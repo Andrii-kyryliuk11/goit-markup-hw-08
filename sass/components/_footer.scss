@@ -8,8 +8,8 @@
 .footer__container {
     @include tablet {
         display: flex;
-        
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: space-around;
         align-items: baseline;
 
     }
@@ -76,7 +76,7 @@
 .footer-form__label {
     margin-bottom: 20px;
     margin-top: 60px;
-    
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -98,13 +98,13 @@
 
 .footer-form__label {
     @include desktop {
-            margin-top: 0;
-        }
+        margin-top: 0;
+    }
 }
 
 .footer-links__container {
     display: flex;
-    // justify-content: center;
+    justify-content: center;
     gap: 10px
 }
 
@@ -139,7 +139,8 @@
 .footer-form {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+
     @include desktop {
         max-width: 570px;
     }
@@ -172,6 +173,7 @@
     @include desktop {
         width: 360px;
         margin-bottom: 0;
+        margin-right: 10px;
     }
 
     &::placeholder {

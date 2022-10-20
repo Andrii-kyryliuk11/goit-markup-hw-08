@@ -8,7 +8,7 @@
 
 .features-list {
 
-    @media screen and (max-width: 767px) {
+    @include allPhones {
         &__item {
             &:not(:last-child) {
                 margin-bottom: 30px;

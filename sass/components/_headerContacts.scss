@@ -1,0 +1,137 @@
+.header-contacts {
+    display: flex;
+    gap: 50px;
+
+    @include allPhones {
+        flex-direction: column-reverse;
+
+    }
+
+    @include tablet {
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+
+    }
+
+    @include desktop {
+        flex-direction: row;
+        gap: 30px;
+
+    }
+}
+
+.header-contacts__mail,
+.header-contacts__phone {
+    display: flex;
+    align-items: center;
+    color: $font-text-color;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 1.16;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    transition: color 250ms $transition-function;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+
+    @include desktop {
+        padding: 32px 0px;
+        font-size: 14px;
+        line-height: 1.14;
+    }
+}
+
+.header-contacts__phone {
+    @include allPhones {
+        font-weight: 500;
+        font-size: 34px;
+        line-height: 1.17;
+        color: $accent-color;
+
+    }
+}
+
+.header-contacts__mail {
+    @include allPhones {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 1.16;
+    }
+}
+
+.menu-contacts {
+    display: flex;
+    margin-top: 65px;
+
+
+    &__item:not(:first-child) {
+        padding-left: 10px;
+    }
+
+    &__item:not(:last-child) {
+        // margin-right: 10px;
+        border-right: 1px solid rgba(33, 33, 33, 0.2);
+        padding-right: 10px;
+    }
+
+    @include tablet {
+        display: none;
+    }
+}
+
+.menu-contacts__link {
+    font-family: inherit;
+    color: $accent-color;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+}
+
+
+
+.header-contacts__icon-mail,
+.header-contacts__icon-phone {
+    @include allPhones {
+        display: none;
+    }
+
+    fill: $font-text-color;
+    margin-right: 10px;
+    transition: fill 250ms $transition-function;
+
+
+}
+
+.header-contacts__icon-mail {
+    @include tablet {
+        width: 14px;
+        height: 10px;
+    }
+
+    @include desktop {
+        width: 16px;
+        height: 12px;
+    }
+}
+
+.header-contacts__icon-phone {
+    @include tablet {
+        width: 10px;
+        height: 14px;
+    }
+
+    @include desktop {
+        width: 10px;
+        height: 16px;
+    }
+}
+
+.header-contacts__mail:hover .header-contacts__icon-mail,
+.header-contacts__phone:hover .header-contacts__icon-phone {
+    fill: $accent-color;
+}

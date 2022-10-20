@@ -19,9 +19,15 @@
       <a href="./index.html" class="logo logo--header">
         <span lang="en" class="logo__first-letter">Web</span><span lang="en" class="logo__second-letter">Studio</span>
       </a>
-      <div class="header-nav__container">
+      <div class="header-nav__container js-menu-container">
         <nav class="header-nav">
+          <button type="button" class="menu-button menu-button--close is-open js-close-menu">
+            <svg class="icon-cross" width="19" height="19" aria-label="Кнопка меню">
+              <use href="./images/icons.svg#icon-cross"></use>
+            </svg>
+          </button>
           <ul class="site-nav">
+            
             <li><a href="./index.html" class="site-nav__link site-nav__link--current">Студія</a></li>
             <li><a href="./portfolio.html" class="site-nav__link">Портфоліо</a></li>
             <li><a href="" class="site-nav__link">Контакти</a></li>
@@ -41,9 +47,30 @@
               </svg>
               +38 096 111 11 11</a>
           </li>
+          
         </ul>
+        <ul class="menu-contacts">
+          <li class="menu-contacts__item">
+            <a class="menu-contacts__link" href="">Instagram</a>
+          </li>
+          <li class="menu-contacts__item">
+            <a class="menu-contacts__link" href="">Twitter</a>
+          </li>
+          <li class="menu-contacts__item">
+            <a class="menu-contacts__link" href="">Facebook</a>
+          </li>
+          <li class="menu-contacts__item">
+            <a class="menu-contacts__link" href="">LinkedIn</a>
+          </li>
+        </ul>
+        
       </div>
-
+      <button type="button" class="menu-button is-open js-open-menu">
+        <svg class="icon-menu" width="24" height="16" aria-label="Кнопка меню">
+          <use  href="./images/icons.svg#icon-menu"></use>
+          
+        </svg>
+      </button>
     </div>
   </header>
 
@@ -117,15 +144,21 @@
         <h2 class="about__title">Чим ми займаємося</h2>
         <ul class="about__itemlist">
           <li class="about__picture">
-            <img src="./images/1.jpg" alt="людина займається програмуванням" width="370">
+            <img 
+            srcset="./images/1.jpg 1x, ./images/1@2x.jpg 2x"
+            src="./images/1.jpg" alt="людина займається програмуванням" width="370">
             <p class="about__text">Десктопні додатки</p>
           </li>
           <li class="about__picture">
-            <img src="./images/2.jpg" alt="людина вибирає стилі для мобільного додатку" width="370">
+            <img
+            srcset="./images/2.jpg 1x, ./images/2@2x.jpg 2x"
+            src="./images/2.jpg" alt="людина вибирає стилі для мобільного додатку" width="370">
             <p class="about__text">Мобільні додатки</p>
           </li>
           <li class="about__picture">
-            <img src="./images/3.jpg" alt="дизайнер вибирає колір на палітрі" width="370">
+            <img 
+            srcset="./images/3.jpg 1x, ./images/3@2x.jpg 2x"
+            src="./images/3.jpg" alt="дизайнер вибирає колір на палітрі" width="370">
             <p class="about__text">Дизайнерські рішення</p>
           </li>
         </ul>
@@ -137,8 +170,13 @@
         <h2 class="team__title">Наша команда</h2>
         <ul class="team__members">
           <li class="member-profile">
-            <img srcset="./images/igor450.jpg 1x, ./images/igor@2x450.jpg 2x" sizes="300px" src="./images/igor450.jpg"
-              alt="Ігор Дем'яненко">
+            <picture>
+              <source srcset="./images/igor270.jpg 1x, ./images/igor270@2x.jpg 2x" media="(min-width: 1200px)">
+              <source srcset="./images/igor354.jpg 1x, ./images/igor354@2x.jpg 2x" media="(min-width: 768px)">
+              <source srcset="./images/igor450.jpg 1x, ./images/igor450@2x.jpg 2x" media="(max-width: 767px)">
+              <img src="./images/igor270.jpg" alt="Ігор Дем'яненко">
+            </picture>
+
             <div class="member-profile__footer">
               <h3 class="member-profile__name">Ігор Дем'яненко</h3>
               <p class="member-profile__position">Product Designer</p>
@@ -179,8 +217,13 @@
             </div>
           </li>
           <li class="member-profile">
-            <img srcset="./images/olha450.jpg 1x, ./images/olha@2x450.jpg 2x" sizes="300px" src="./images/igor450.jpg"
-              alt="Ігор Дем'яненко">
+            <picture>
+              <source srcset="./images/olha270.jpg 1x, ./images/olha270@2x.jpg 2x" media="(min-width: 1200px)">
+              <source srcset="./images/olha354.jpg 1x, ./images/olha354@2x.jpg 2x" media="(min-width: 768px)">
+              <source srcset="./images/olha450.jpg 1x, ./images/olha450@2x.jpg 2x" media="(max-width: 767px)">
+              <img src="./images/olha270.jpg" alt="Ольга Рєпіна">
+            </picture>
+
             <div class="member-profile__footer">
               <h3 class="member-profile__name">Ольга Рєпіна</h3>
               <p class="member-profile__position">Frontend Developer</p>
@@ -221,8 +264,13 @@
             </div>
           </li>
           <li class="member-profile">
-            <img srcset="./images/mykola450.jpg 1x, ./images/mykola@2x450.jpg 2x" sizes="300px"
-              src="./images/igor450.jpg" alt="Ігор Дем'яненко">
+            <picture>
+              <source srcset="./images/mykola270.jpg 1x, ./images/mykola270@2x.jpg 2x" media="(min-width: 1200px)">
+              <source srcset="./images/mykola354.jpg 1x, ./images/mykola354@2x.jpg 2x" media="(min-width: 768px)">
+              <source srcset="./images/mykola450.jpg 1x, ./images/mykola450@2x.jpg 2x" media="(max-width: 767px)">
+              <img src="./images/mykola270.jpg" alt="Микола Тарасов">
+            </picture>
+
             <div class="member-profile__footer">
               <h3 class="member-profile__name">Микола Тарасов</h3>
               <p class="member-profile__position">Marketing</p>
@@ -263,8 +311,12 @@
             </div>
           </li>
           <li class="member-profile">
-            <img srcset="./images/misha450.jpg 1x, ./images/misha@2x450.jpg 2x" sizes="300px" src="./images/igor450.jpg"
-              alt="Ігор Дем'яненко">
+            <picture>
+              <source srcset="./images/misha270.jpg 1x, ./images/misha270@2x.jpg 2x" media="(min-width: 1200px)">
+              <source srcset="./images/misha354.jpg 1x, ./images/misha354@2x.jpg 2x" media="(min-width: 768px)">
+              <source srcset="./images/misha450.jpg 1x, ./images/misha450@2x.jpg 2x" media="(max-width: 767px)">
+              <img src="./images/misha270.jpg" alt="Михайло Єрмаков">
+            </picture>
             <div class="member-profile__footer">
               <h3 class="member-profile__name">Михайло Єрмаков</h3>
               <p class="member-profile__position">UI Designer</p>
@@ -472,6 +524,7 @@
     </div>
   </div>
   <script src="./js/modal.js"></script>
+  <script src="./js/mobileMenu.js"></script>
 </body>
 
 </html>

@@ -35,7 +35,7 @@
 }
 
 .logo--header {
-    @media screen and (max-width: 767px) {
+    @include allPhones {
         margin-top: 16px;
         margin-bottom: 16px;
     }

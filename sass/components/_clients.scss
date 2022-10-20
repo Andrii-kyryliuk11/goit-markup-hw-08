@@ -17,8 +17,8 @@
 
     @include desktop {
         font-size: 36px;
-            line-height: 1.16;
-            margin-bottom: 50px;
+        line-height: 1.16;
+        margin-bottom: 50px;
     }
 }
 
@@ -32,7 +32,7 @@
     height: 92px;
     border-radius: 4px;
 
-    @media screen and (max-width: 767px) {
+    @include allPhones {
         width: calc((100% - 2 * 15px)/2);
     }
 

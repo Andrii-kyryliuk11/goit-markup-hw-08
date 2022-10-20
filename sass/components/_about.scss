@@ -1,9 +1,11 @@
 .about {
     display: block;
-    @media  screen and (max-width: 1199px) {
+    padding-bottom: 94px;
+
+    @media screen and (max-width: 1199px) {
         display: none;
     }
-    padding-bottom: 94px;
+
 }
 
 .about__title {
@@ -18,8 +20,7 @@
 
 .about__itemlist {
     display: flex;
-        gap: 30px;
-
+    gap: 30px;
 }
 
 .about__picture {
