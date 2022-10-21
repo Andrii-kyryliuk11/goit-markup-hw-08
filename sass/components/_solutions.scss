@@ -1,6 +1,4 @@
 .solutions {
-    height: 400px;
-    max-width: 480px;
     padding: 118px 60px;
     background-color: #c4c4c4;
     background-image: linear-gradient(to bottom,
@@ -9,7 +7,7 @@
         url(../images/backgroundmobile.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 480px 400px;
+    background-size: cover;
 
     margin-right: auto;
     margin-left: auto;
@@ -36,9 +34,6 @@
                 rgba(47, 48, 58, 0.4)),
             url(../images/backgroundtablet.jpg);
 
-        background-size: 768px 400px;
-        max-width: 768px;
-        
 
         @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
@@ -58,7 +53,7 @@
                 rgba(47, 48, 58, 0.4)),
             url(../images/backgrounddesktop.jpg);
 
-        background-size: 1600px 600px;
+        // background-size: 1600px 600px;
         max-width: 1600px;
         
         @media (min-device-pixel-ratio: 2),

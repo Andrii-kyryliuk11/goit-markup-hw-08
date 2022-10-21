@@ -46,7 +46,15 @@
 }
 
 .header-contacts__phone {
-    @include allPhones {
+
+    @media screen and (max-width: 440px) {
+    
+    
+            font-size: 20px;
+        }
+
+   
+    @media screen and (min-width: 441px) and (max-width: 767px) {
         font-weight: 500;
         font-size: 34px;
         line-height: 1.17;
@@ -56,26 +64,46 @@
 }
 
 .header-contacts__mail {
+
+
+
     @include allPhones {
         font-weight: 500;
         font-size: 24px;
         line-height: 1.16;
     }
+
+        @media screen and (max-width: 440px) {
+    
+    
+            font-size: 20px;
+        }
 }
 
 .menu-contacts {
     display: flex;
     margin-top: 65px;
 
+    @media screen and (max-width: 440px) {
+        margin-top: 25px;
+    }
 
     &__item:not(:first-child) {
         padding-left: 10px;
+
+        @media screen and (max-width: 440px) {
+            padding-left: 4px;
+        }
     }
 
     &__item:not(:last-child) {
         // margin-right: 10px;
         border-right: 1px solid rgba(33, 33, 33, 0.2);
         padding-right: 10px;
+
+        @media screen and (max-width: 440px) {
+                padding-right: 4px;
+            }
     }
 
     @include tablet {
@@ -90,6 +118,10 @@
     font-size: 18px;
     line-height: 1.22;
     letter-spacing: 0.02em;
+
+    @media screen and (max-width: 440px) {
+        font-size: 14px;
+    }
 }
 
 

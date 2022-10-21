@@ -31,6 +31,7 @@
 
     @include mobileSmall {
         width: calc(100% - 2 * 15px);
+        height: calc(100% - 2 * 15px);
 
     }
 
@@ -57,6 +58,11 @@
 
     @media screen and (max-width: 1199px) {
         line-height: 1.5;
+    }
+
+    @include mobileSmall {
+        font-size: 15px;
+        line-height: 1;
     }
 }
 
@@ -123,6 +129,10 @@
         letter-spacing: 0.01em;
         color: rgba(117, 117, 117, 0.5);
     }
+
+    @include mobileSmall {
+        margin-bottom: 3px;
+    }
 }
 
 .checkbox__label {
@@ -134,6 +144,10 @@
     @media screen and (max-width: 1199px) {
         font-size: 12px;
         line-height: 1.16;
+    }
+
+    @include mobileSmall {
+        text-align: center;
     }
 }
 
@@ -148,6 +162,10 @@
     border-radius: 4px;
     transition: background-color 250ms $transition-function,
         border 250ms $transition-function;
+
+        @include mobileSmall {
+            width: 16px;
+        }
 }
 
 .checkbox {
@@ -158,6 +176,10 @@
 
     gap: 7px;
     margin-bottom: 30px;
+
+    @include mobileSmall {
+        margin-bottom: 10px;
+    }
 }
 
 

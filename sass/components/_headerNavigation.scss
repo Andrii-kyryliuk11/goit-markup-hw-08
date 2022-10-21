@@ -25,12 +25,20 @@
             line-height: 1.17;
             padding: 0;
 
+            @media screen and (max-width: 440px) {
+                font-size: 20px;
+            }
+
         }
 
         &.is-open {
             transform: translateY(0);
         }
     }
+
+        @media screen and (max-width: 440px) {
+            padding: 40px 15px;
+        }
 
     @include tablet {
         display: flex;
@@ -46,9 +54,14 @@
     display: flex;
     gap: 50px;
 
+   
     @include allPhones {
         margin-bottom: 305px;
     }
+
+         @media screen and (max-width: 440px) {
+             margin-bottom: 200px;
+         }
 }
 
 
