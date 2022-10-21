@@ -48,12 +48,12 @@
 .header-contacts__phone {
 
     @media screen and (max-width: 440px) {
-    
-    
-            font-size: 20px;
-        }
 
-   
+
+        font-size: 20px;
+    }
+
+
     @media screen and (min-width: 441px) and (max-width: 767px) {
         font-weight: 500;
         font-size: 34px;
@@ -73,11 +73,11 @@
         line-height: 1.16;
     }
 
-        @media screen and (max-width: 440px) {
-    
-    
-            font-size: 20px;
-        }
+    @media screen and (max-width: 440px) {
+
+
+        font-size: 20px;
+    }
 }
 
 .menu-contacts {
@@ -102,8 +102,8 @@
         padding-right: 10px;
 
         @media screen and (max-width: 440px) {
-                padding-right: 4px;
-            }
+            padding-right: 4px;
+        }
     }
 
     @include tablet {

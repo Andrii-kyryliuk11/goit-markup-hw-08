@@ -36,9 +36,9 @@
         }
     }
 
-        @media screen and (max-width: 440px) {
-            padding: 40px 15px;
-        }
+    @media screen and (max-width: 440px) {
+        padding: 40px 15px;
+    }
 
     @include tablet {
         display: flex;
@@ -54,14 +54,14 @@
     display: flex;
     gap: 50px;
 
-   
+
     @include allPhones {
         margin-bottom: 305px;
     }
 
-         @media screen and (max-width: 440px) {
-             margin-bottom: 200px;
-         }
+    @media screen and (max-width: 440px) {
+        margin-bottom: 200px;
+    }
 }
 
 

@@ -163,9 +163,9 @@
     transition: background-color 250ms $transition-function,
         border 250ms $transition-function;
 
-        @include mobileSmall {
-            width: 16px;
-        }
+    @include mobileSmall {
+        width: 16px;
+    }
 }
 
 .checkbox {
